@@ -126,50 +126,30 @@ If files conflict, resolve the conflict in the relevant source-of-truth document
 
 Do not duplicate the same principle across multiple files unless duplication is necessary for a standalone template.
 
-## Verification
-
-A task is complete only after its result has been verified.
-
-Before declaring completion:
-
-* Run the relevant automated tests.
-* Run the project’s type, lint, and formatting checks.
-* Compare the result with the acceptance criteria.
-* Review important edge cases and failure modes.
-* Confirm that documentation remains accurate.
-* Confirm that no unrelated files were changed.
-* Confirm that no sensitive information was introduced.
-* Update progress and task files when applicable.
-* Report what was verified.
-* Explain anything that remains unverified.
-
-For Python projects, use the following default quality checks when they are configured:
-
-```bash
-pytest
-mypy .
-ruff check .
-ruff format --check .
-```
-
-Adapt these commands to the project’s actual technology stack.
-
-Do not claim that a check passed unless it was actually run successfully.
-
-If a check cannot be run, report:
-
-* Which check was not run
-* Why it could not be run
-* What remains unverified
-
-## Completion Report
 
 At the end of a task, provide a concise report containing:
 
 1. What changed
 2. Which files changed
-3. What was verified
-4. Any assumptions or limitations
-5. The next relevant step, if one remains
+3. What was verified, including:
+   - commands or checks performed;
+   - their results;
+   - acceptance criteria confirmed.
+4. Any assumptions, limitations, or items that remain unverified
+5. The next relevant step, only if one remains
 
-Code generation alone does not constitute completion. A task is complete only when the requirements are satisfied and the result has been verified.
+Code generation alone does not constitute completion. A task is complete
+only when the requirements are satisfied and the result has been verified.At the end of a task, provide a concise report containing:
+
+## Completion Report
+1. What changed
+2. Which files changed
+3. What was verified, including:
+   - commands or checks performed;
+   - their results;
+   - acceptance criteria confirmed.
+4. Any assumptions, limitations, or items that remain unverified
+5. The next relevant step, only if one remains
+
+Code generation alone does not constitute completion. A task is complete
+only when the requirements are satisfied and the result has been verified.
