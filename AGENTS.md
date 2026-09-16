@@ -9,14 +9,32 @@ Before starting any task, read:
 
 Follow the applicable principles and workflow throughout the task.
 
-For non-trivial projects, also read the following files when they exist:
+## Verification Before Completion
 
-* `requirements.md`
-* `design.md`
-* `progress.md`
-* The relevant file under `tasks/`
+Before declaring a non-trivial coding task complete:
 
-Do not rely on conversational memory when the required information is available in project files.
+1. Identify the acceptance criteria from the specification.
+2. Run the repository's relevant tests, linting, type checks, and
+   build commands.
+3. Verify each acceptance criterion against the actual system state.
+4. Test both expected behavior and important failure or edge cases.
+5. Review the final diff for:
+   - unrelated changes;
+   - incomplete implementation;
+   - incorrect assumptions;
+   - regressions;
+   - unnecessary complexity;
+   - security or compatibility risks.
+6. Do not treat passing tests as sufficient when the tests do not
+   cover the complete specification.
+7. Report:
+   - checks performed;
+   - commands executed and their results;
+   - acceptance criteria verified;
+   - anything that remains unverified.
+
+Never claim that a task is complete when required verification could
+not be performed.
 
 ## Repository Purpose
 
