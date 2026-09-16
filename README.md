@@ -60,7 +60,7 @@ The planned structure is:
 ```text
 ai-assisted-development-playbook/
 ├── README.md
-├── CLAUDE.md
+├── AGENT.md
 ├── LICENSE
 ├── CONTRIBUTING.md
 ├── docs/
