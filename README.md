@@ -62,19 +62,9 @@ ai-assisted-development-playbook/
 ├── README.md
 ├── AGENT.md
 ├── LICENSE
-├── CONTRIBUTING.md
 ├── docs/
 │   ├── coding-principles.md
-│   ├── ai-assisted-development-workflow.md
-│   └── usage-guide.md
-├── templates/
-│   ├── requirements.md
-│   ├── design.md
-│   ├── progress.md
-│   ├── decision-log.md
-│   └── module-task.md
-└── examples/
-    └── sample-research-project/
+│   ├── ai-assisted-development-workflow.md   
 ```
 
 ## Quality Gates
